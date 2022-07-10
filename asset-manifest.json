@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a341b4ac.css",
+    "main.js": "/static/js/main.76020bfa.js",
+    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/movie_junkie.png": "/static/media/movie_junkie.b7ce37dd8c7a4ce3b812.png",
+    "static/media/shokumotsu.png": "/static/media/shokumotsu.938fa220b4f7648220f8.png",
+    "static/media/pokemon_game.png": "/static/media/pokemon_game.137c1bb34a32d1e89a0b.png",
+    "static/media/notes_app.png": "/static/media/notes_app.f910541af464447d0fc7.png",
+    "static/media/calculator.png": "/static/media/calculator.d9278802f8777b188cfa.png",
+    "index.html": "/index.html",
+    "main.a341b4ac.css.map": "/static/css/main.a341b4ac.css.map",
+    "main.76020bfa.js.map": "/static/js/main.76020bfa.js.map",
+    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a341b4ac.css",
+    "static/js/main.76020bfa.js"
+  ]
+}
