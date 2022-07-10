@@ -1,0 +1,53 @@
+.About {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.About h1 {
+    animation: 1s ease-out 0s 1 slideInFromTop;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.About p {
+    animation: 1s ease-out 0s 1 slideInFromTop;
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 10px 0;
+}
+
+.About button {
+    margin: 20px auto;
+    display: block;
+    width: 150px;
+    font-size: 1.1em;
+    color: rgb(213, 213, 213);
+    height: 2.5em;
+    border: 3px solid rgb(141, 0, 0);
+    background-color: transparent;
+    border-radius: 5px;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.About button:hover {
+    border-color: rgb(255, 0, 0);
+}
+
+.About button:active {
+    margin-top: 21px;
+}
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-30%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}

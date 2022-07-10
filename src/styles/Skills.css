@@ -1,0 +1,46 @@
+.Skills {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Skills h1 {
+    animation: 1s ease-out 0s 1 slideInFromTop;
+    text-decoration: underline;
+    font-size: 2.4em;
+}
+
+.skill-div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.Skills .grid {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin-top: 35px;
+}
+
+.Skills .grid div {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.Skills div div img {
+    width: 30px;
+}
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-30%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}

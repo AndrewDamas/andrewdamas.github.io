@@ -1,0 +1,74 @@
+.Contact {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.Contact h1 {
+    font-size: 2.2em;
+    margin-top: 49px;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.Contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 375px;
+    justify-content: space-between;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.Contact form .reg-input {
+    height: 35px;
+    color: rgb(213, 213, 213);
+    border: 1px solid rgb(213, 213, 213);
+    border-radius: 2px;
+    padding-left: 8px;
+    caret-color: rgb(255, 0, 0);
+}
+
+.Contact form .reg-input:focus {
+    outline: none;
+}
+
+.Contact form textarea {
+    background: transparent;
+    color: rgb(213, 213, 213);
+    border: 1px solid rgb(213, 213, 213);
+    border-radius: 2px;
+    padding: 8px;
+    caret-color: rgb(255, 0, 0);
+}
+
+.Contact form textarea:focus {
+    outline: none;
+}
+
+.Contact form input {
+    background: transparent;
+}
+
+.Contact form input[type=submit] {
+    font-size: 1.1em;
+    color: rgb(213, 213, 213);
+    height: 2.5em;
+    border: 3px solid rgb(141, 0, 0);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.Contact form input[type=submit]:hover {
+    border-color: rgb(255, 0, 0);
+}
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-30%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}

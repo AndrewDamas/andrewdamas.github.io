@@ -1,0 +1,67 @@
+.HomePage {
+    background-color: rgb(17, 17, 17);
+    height: fit-content;
+}
+
+.HomePage header {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 50px auto;
+    width: 90%;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.HomePage h1 {
+    margin: 0;
+}
+
+.HomePage .myName {
+    margin: .5em auto;
+    color: rgb(255, 0, 0);
+}
+
+.HomePage p {
+    font-size: 1.1em;
+    margin: 40px 1.5em 0px 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.HomePage footer {
+    position: absolute;
+    bottom: 1.5em;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.HomePage footer ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+
+.HomePage footer ul li{
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-30%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+  

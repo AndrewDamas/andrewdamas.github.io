@@ -1,0 +1,95 @@
+.Projects {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 49px;
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+}
+
+.Projects h1{
+    animation: 1s ease-out 0s 1 slideInFromTop;
+    font-size: 2.4em;
+}
+
+.Projects ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+    padding: 0;
+    margin-top: 45px;
+}
+
+.Projects ul a {
+    text-decoration: none;
+    margin: 0 auto;
+    color: rgb(213, 213, 213);
+    margin-bottom: 40px;
+    width: 262px;
+}
+
+.Projects ul a li {
+    margin-top: 0;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.Projects ul a li:active {
+    margin-top: 5px;
+}
+
+.Projects ul a:active + a {
+    margin-top: -5px;
+}
+
+.Projects ul a li:hover div .git{
+    color: rgb(141, 0, 0);
+}
+
+.Projects ul a li {
+    list-style: none;
+    width: 262px;
+    margin: 0 auto;
+    padding: 0;
+    border: 2px dotted rgb(213, 213, 213);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px #00000039;
+    cursor: pointer;
+}
+
+.Projects ul a li img {
+    width: 100%;
+    border-bottom: 1px solid rgb(213, 213, 213);
+}
+
+.Projects ul a li div {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Projects ul a li div h2 {
+    margin: 0;
+    color: rgb(213, 213, 213);
+}
+
+.Projects ul a li div p {
+    margin: 0;
+}
+
+.Projects ul a li div .git {
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: rgb(255, 0, 0);
+}
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-30%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}

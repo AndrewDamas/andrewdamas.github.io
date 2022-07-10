@@ -1,0 +1,88 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left-side li{
+    padding: 1.5em 0.4em;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.left-side {
+    font-size: 1em;
+    padding-left: .9em;
+}
+
+.right-side li{
+    padding: 1.25em 0.4em;
+    cursor: pointer;
+}
+
+.right-side {
+    font-size: 1.1em;
+    padding-right: .9em;
+}
+
+.nav li {
+    font-size: 1.1em;
+    position: relative;
+}
+  
+.left-side li::before,
+.left-side li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+.left-side li::before {
+    background-color: rgb(255, 0, 0);
+    height: 2px;
+    width: 100%;
+    bottom: 1.2em;
+    left: .1em;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.left-side li::after {
+    content: attr(data-replace);
+    height: 100%;
+    transform-origin: 100% 50%;
+    left: .4em;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: rgb(255, 0, 0);
+}
+
+.left-side li:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}
+.left-side li:hover::after {
+    transform: translate3d(0, 0, 0);
+}
+
+.left-side li span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.left-side li:hover span {
+    transform: translate3d(-200%, 0, 0);
+}
